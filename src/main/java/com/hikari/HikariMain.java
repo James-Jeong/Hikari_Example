@@ -56,7 +56,7 @@ public class HikariMain {
                 + table2
                 + " values(?, ?, ?)";
 
-        User user1 = new User("jamesj", "010-9253-0675", "서욽특별시 관악구 관악로 11나길 13, 204호");
+        User user1 = new User("jamesj", "010-9253-0675", "");
         User user2 = new User("sally", "010-1234-5678", "부산광역시");
 
         Object insertResult2_1 = dbManager.insertResultAsObj(insertSql2, user1.getName(), user1.getNumber(), user1.getAddress());
